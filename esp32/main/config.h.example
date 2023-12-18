@@ -1,0 +1,4 @@
+#define WS_HOST "192.168.1.1" # Enter your websocket server IP from the Android App screen
+#define WS_PORT 8080
+#define WIFI_SSID "ENTER_YOUR_WI_FI_ACCESS_POINT_NAME"
+#define WIFI_PWD "ENTER_YOUR_WI_FI_AP_PASSWORD"

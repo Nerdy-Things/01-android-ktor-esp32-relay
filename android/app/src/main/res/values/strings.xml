@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KtorEsp32Relay</string>
+    <string name="connect_esp">Connect ESP32 to your ip</string>
+    <string name="network_not_found">Network not detected. Are you using wifi?</string>
+    <string name="relay_device">Relay Device</string>
+    <string name="nerdy_things">Nerdy.Things</string>
+</resources>
