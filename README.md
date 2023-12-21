@@ -11,6 +11,7 @@
 ## System Design
 
 ![System Design](/images/schema.png)
+![System Design](/images/esp32-relay.png)
 
 ### Android 
  
