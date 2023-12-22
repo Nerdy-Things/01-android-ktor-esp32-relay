@@ -62,11 +62,11 @@ void nt_websocket_connect()
         .uri = WS_HOST,
         .port = WS_PORT,
         .reconnect_timeout_ms = 10000,
-        .network_timeout_ms = 60000,
+        .network_timeout_ms = 10000,
     };
 
     esp_websocket_client_handle_t client = esp_websocket_client_init(&ws_cfg);
-    esp_websocket_register_events(client, WEBSOCKET_EVENT_ANY, nt_websocket_event_handler, (void*)client);
+    esp_websocket_register_events(client, WEBSOCKET_EVENT_ANY, &nt_websocket_event_handler, (void*)client);
     esp_websocket_client_start(client);
 }
 
