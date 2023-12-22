@@ -57,7 +57,7 @@ void nt_websocket_event_handler(void* handler_args, esp_event_base_t base, int32
 
 void nt_websocket_connect()
 {
-    ESP_LOGI(TAG, "WebSockets Connect ws://%s:%d", WS_HOST, WS_PORT);
+    ESP_LOGI(TAG, "WebSockets Connect %s:%d", WS_HOST, WS_PORT);
     const esp_websocket_client_config_t ws_cfg = {
         .uri = WS_HOST,
         .port = WS_PORT,
