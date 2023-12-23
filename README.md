@@ -1,5 +1,16 @@
 # Android Ktor Websocket server with a ESP32 based relay module
 
+## Video Description
+
+[![YouTube video](/images/video_screenshot.png)](https://www.youtube.com/watch?v=XKUXzPJoF0E)
+
+
+https://www.youtube.com/watch?v=XKUXzPJoF0E
+
+## Detailed explanation article on Medium
+
+https://medium.com/@gektor650/android-websocket-application-for-controlling-an-esp32-relay-device-f36ddd4615fd
+
 ## Prerequisites
 
 * [Android Studio](https://developer.android.com/studio)
