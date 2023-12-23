@@ -57,16 +57,16 @@ void nt_websocket_event_handler(void* handler_args, esp_event_base_t base, int32
 
 void nt_websocket_connect()
 {
-    ESP_LOGI(TAG, "WebSockets Connect ws://%s:%d", WS_HOST, WS_PORT);
+    ESP_LOGI(TAG, "WebSockets Connect %s:%d", WS_HOST, WS_PORT);
     const esp_websocket_client_config_t ws_cfg = {
         .uri = WS_HOST,
         .port = WS_PORT,
         .reconnect_timeout_ms = 10000,
-        .network_timeout_ms = 60000,
+        .network_timeout_ms = 10000,
     };
 
     esp_websocket_client_handle_t client = esp_websocket_client_init(&ws_cfg);
-    esp_websocket_register_events(client, WEBSOCKET_EVENT_ANY, nt_websocket_event_handler, (void*)client);
+    esp_websocket_register_events(client, WEBSOCKET_EVENT_ANY, &nt_websocket_event_handler, (void*)client);
     esp_websocket_client_start(client);
 }
 
